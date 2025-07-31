@@ -18,8 +18,6 @@ environment = {
 };
 
 var query = 'mongodb+srv://' + environment.DBMONGOUSER + ':' + environment.DBMONGOPASS + '@' + environment.DBMONGOSERV + '/' + environment.DBMONGO + '?retryWrites=true&w=majority&appName=Cluster0';
-
-//var query = "mongodb+srv://Edward:1234@cluster0.enycqok.mongodb.net/TaskDB?retryWrites=true&w=majority&appName=Cluster0"
 const db = (query);
 
 mongoose.Promise = global.Promise;
